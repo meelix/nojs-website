@@ -196,6 +196,9 @@ header > * {
     background: none;
     position: relative;
     padding-bottom: 0;
+    visibility: visible;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
   }
 
   #menu > *:first-child {
