@@ -18,8 +18,8 @@ header {
   background-color: transparent;
 }
 #a:target {
-    transition: background-color 0.02s 0.18s;
-    background-color: transparent;
+  transition: background-color 0.02s 0.18s;
+  background-color: transparent;
 }
 
 header > * {
@@ -31,7 +31,7 @@ header > * {
   color: var(--primary);
   text-decoration: none;
   height: 100%;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   display: inline-flex;
   align-items: center;
 }
@@ -128,7 +128,7 @@ header > * {
   flex-direction: column;
   background-color: var(--menu-background);
   /* transition: height 0.2s; */
-  transition: height 0.2s, visibility 0s .2s;
+  transition: height 0.2s, visibility 0s 0.2s;
   padding-right: 0.2em;
   margin-right: -0.2em;
   visibility: hidden;
@@ -144,10 +144,10 @@ header > * {
 
 #menu a {
   text-decoration: none;
-  padding-top: .2em;
-  padding-bottom: .2em;
-  margin-top: .2em;
-  margin-bottom: .2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 #menu a:hover,

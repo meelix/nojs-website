@@ -71,61 +71,77 @@ a:active {
 /* elements */
 
 /*buttons*/
-.btn, button {
-    padding: .25rem 1.125rem;
-    color: var(--btn-color);
-    border: 1px solid var(--btn-border);
-    background-color: var(--btn-bg);
-    transition: color .1s, border .1s, background-color .1s;
+.btn,
+button {
+  padding: 0.25rem 1.125rem;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  transition: color 0.1s, border 0.1s, background-color 0.1s;
 }
-.btn:hover, .btn:focus, .btn:active,
-button:hover, button:focus, button:active {
-    color: var(--btn-color_hover);
-    background-color: var(--btn-bg_hover);
-    border-color: var(--btn-border_hover);
+.btn:hover,
+.btn:focus,
+.btn:active,
+button:hover,
+button:focus,
+button:active {
+  color: var(--btn-color_hover);
+  background-color: var(--btn-bg_hover);
+  border-color: var(--btn-border_hover);
 }
-.btn:active, button:active {
-    box-shadow: 0 0 1px 1px var(--btn-border_hover);
+.btn:active,
+button:active {
+  box-shadow: 0 0 1px 1px var(--btn-border_hover);
 }
 .btn-primary {
-    --btn-color: var(--primary);
-    --btn-bg: transparent;
-    --btn-bg_hover: var(--primary);
-    --btn-border: var(--primary);
-    --btn-border_hover: var(--primary);
+  --btn-color: var(--primary);
+  --btn-bg: transparent;
+  --btn-bg_hover: var(--primary);
+  --btn-border: var(--primary);
+  --btn-border_hover: var(--primary);
 }
 .btn-accent {
-    --btn-color: var(--accent);
-    --btn-color_hover: var(--dark);
-    --btn-bg: transparent;
-    --btn-bg_hover: var(--accent);
-    --btn-border: var(--accent);
-    --btn-border_hover: var(--accent);
+  --btn-color: var(--accent);
+  --btn-color_hover: var(--dark);
+  --btn-bg: transparent;
+  --btn-bg_hover: var(--accent);
+  --btn-border: var(--accent);
+  --btn-border_hover: var(--accent);
 }
 
 /* dunno yet */
 a:hover small {
-    opacity: .8;
+  opacity: 0.8;
 }
 small {
-    display: inline-block;
-    opacity: .6;
-    transition: opacity .1s;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity 0.1s;
 }
 h2 > span {
-    display: inline-block;
-    width: 0em;
+  display: inline-block;
+  width: 0em;
 }
 .center {
-    text-align: center;
+  text-align: center;
 }
 #unsubscribe {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 footer {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.github svg {
+  fill: var(--accent);
+  transition: fill 0.1s;
+}
+.github:hover svg,
+.github:focus svg,
+.github:active svg {
+  fill: var(--accent-darker);
 }
 
 /* -- temp -- */
@@ -139,5 +155,5 @@ main > * {
 } */
 
 .grid > * {
-    border: 1px dotted var(--accent);
+  border: 1px dotted var(--accent);
 }
