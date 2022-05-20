@@ -6,4 +6,5 @@ html,body{height:100%;scroll-behavior:smooth}
 img,picture,video,canvas,svg{display:block;max-width:100%}
 input,button,textarea,select{font:inherit}
 p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}
+@media(prefers-reduced-motion:reduce){*{transition-duration:0s!important;transition-delay:0s!important;scroll-behavior:initial!important}}
 /* ----------------------------------*/

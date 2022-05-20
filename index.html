@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoJs</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 <body id="toggle">
-    <header>
+    <header class="container">
         <div></div>
         <a href="/" id="logo">NoJs</a>
-        <div id="menu_toggle"><a href="#toggle" id="open_menu">Menu</a><a href="#" id="close_menu">Menu</a></div>
+        <div id="menu_toggle"><a href="#toggle" id="open_menu" aria-label="Open menu">Menu</a><a href="#" id="close_menu" aria-label="Close menu">Menu</a></div>
         <nav id="menu">
             <a href="#intro">Intro</a>
             <a href="#about">About Us</a>
             <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <div id="wrapper">
         <main>
             <div class="container" id="intro">
+                <h1 class="mb2">Intro</h1>
                 <div class="grid">
                     <div class="col-2">Col</div>
                     <div class="col-1 md-col-2">Col</div>
@@ -29,11 +31,42 @@
                     <div class="col-4">Col</div>
                 </div>
             </div>
-            <div class="container" id="about">about</div>
-            <div class="container" id="projects">projects</div>
+            <div class="container mt3" id="about">
+                <h2 class="mb2">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat accusamus officiis tempore, at dolorum ipsam nulla excepturi maxime beatae quisquam. Nisi autem asperiores repellat iste, sed adipisci nam hic. Sunt aut nulla magni, ipsa molestiae et voluptates adipisci aliquid perferendis!</p>
+            </div>
+            <div class="container mt3" id="projects">
+                <h2 class="mb2">Projects</h2>
+            </div>
+            <div class="container my3" id="contact">
+                <h2 class="mb2">Annoying<br>Newsletter</h2>
+                <form action="./thanks.html" method="get">
+
+                    <!-- without validation -->
+                    <div class="input">
+                        <input id="contact_name" name="name" autocomplete="name" placeholder="Max Mustermann" required>
+                        <label for="contact_name" aria-label="Name">Name</label>
+                    </div>
+                    <div class="input">
+                        <input id="contact_email" name="email" autocomplete="email" placeholder="max@awesome.mail" required>
+                        <label for="contact_email" aria-label="Email">Email</label>
+                    </div>
+                    <!-- ------------------ -->
+
+                    <!-- <div class="input">
+                        <input id="contact_name" autocomplete="name" placeholder="Max Mustermann" required>
+                        <label for="contact_name" aria-label="Name">Name</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="contact_email" autocomplete="email" placeholder="max@awesome.mail" required>
+                        <label for="contact_email" aria-label="Email">Email</label>
+                    </div> -->
+                    <button type="submit" class="mt2 btn-accent">Spam on!</button>
+                </form>
+            </div>
         </main>
-        <footer>
-            (c) Lorem ipsum dolor sit amet.
+        <footer class="container">
+            (c) Meelix :3
         </footer>
     </div>
 </body>

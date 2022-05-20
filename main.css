@@ -3,80 +3,141 @@
 @import url("layout.css");
 @import url("fonts.css");
 @import url("header.css");
+@import url("form.css");
 
 /* VARIABLES */
 :root {
-    /*colors*/
-    --dark: #334;
-    --primary: #dec;
-    --accent: #cd8;
-    --accent-darker: #A3B16D;
-    --menu-background: #2a2a3aaa;
-    /*settings*/
-    --header-height: 50px;
-    --space-1: 1rem;
-    --space-2: 2rem;
-    --space-3: 4rem;
-    --space-4: 6rem;
-    /*DONT CHANGE*/
-    --menu: 0;
+  /*colors*/
+  --dark: #334;
+  --primary: #dec;
+  --accent: #cd8;
+  --accent-darker: #a3b16d;
+  --menu-background: #2a2a3aaa;
+  /*settings*/
+  --header-height: 50px;
+  --space-1: 1rem;
+  --space-2: 2rem;
+  --space-3: 4rem;
+  --space-4: 6rem;
 }
 
 /* GENERAL */
 html {
-    padding-top: var(--header-height)
+  padding-top: var(--header-height);
 }
 
 body {
-    background-color: var(--dark);
-    color: var(--primary);
-    font-family: var(--font-1);
-
+  background-color: var(--dark);
+  color: var(--primary);
+  font-family: var(--font-1);
 }
 
 #wrapper {
-    position: absolute;
-    top: var(--header-height);
-    overflow: auto;
-    height: calc(100% - var(--header-height));
-    width: 100%;
-    scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  top: var(--header-height);
+  overflow: auto;
+  height: calc(100% - var(--header-height));
+  width: 100%;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: var(--accent-darker);
+  color: var(--accent-darker);
 }
 
-
+/* scrollbar */
 ::-webkit-scrollbar {
-    width: 11px;
+  width: 11px;
 }
 
 #wrapper,
 #menu {
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent) transparent;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
-/* --- */
+/* elements */
 
+/*buttons*/
+.btn, button {
+    padding: .25rem 1.125rem;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-border);
+    background-color: var(--btn-bg);
+    transition: color .1s, border .1s, background-color .1s;
+}
+.btn:hover, .btn:focus, .btn:active,
+button:hover, button:focus, button:active {
+    color: var(--btn-color_hover);
+    background-color: var(--btn-bg_hover);
+    border-color: var(--btn-border_hover);
+}
+.btn:active, button:active {
+    box-shadow: 0 0 1px 1px var(--btn-border_hover);
+}
+.btn-primary {
+    --btn-color: var(--primary);
+    --btn-bg: transparent;
+    --btn-bg_hover: var(--primary);
+    --btn-border: var(--primary);
+    --btn-border_hover: var(--primary);
+}
+.btn-accent {
+    --btn-color: var(--accent);
+    --btn-color_hover: var(--dark);
+    --btn-bg: transparent;
+    --btn-bg_hover: var(--accent);
+    --btn-border: var(--accent);
+    --btn-border_hover: var(--accent);
+}
+
+/* dunno yet */
+a:hover small {
+    opacity: .8;
+}
+small {
+    display: inline-block;
+    opacity: .6;
+    transition: opacity .1s;
+}
+h2 > span {
+    display: inline-block;
+    width: 0em;
+}
+.center {
+    text-align: center;
+}
+#unsubscribe {
+    color: var(--primary);
+}
+
+footer {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* -- temp -- */
 main {
-    margin-top: auto;
-    margin-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+/* 
+main > * {
+  height: 100vh;
+} */
 
-main>* {
-    height: 100vh;
+.grid > * {
+    border: 1px dotted var(--accent);
 }

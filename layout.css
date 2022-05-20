@@ -6,7 +6,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-gap: var(--space-1);
 }
 .col-1 {grid-column: auto / span 1}
 .col-2 {grid-column: auto / span 2}

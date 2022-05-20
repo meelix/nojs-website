@@ -1,0 +1,45 @@
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  margin-top: 2.5rem;
+}
+.input label {
+  font-size: 1.1em;
+  position: absolute;
+  bottom: 3px;
+  transition: font-size 0.2s, inset 0.2s;
+}
+.input label:after,
+.input input:valid + label:after {
+  content: ":";
+  opacity: 0;
+  transition: opacity 0.2s 0s;
+}
+.input input::placeholder {
+  opacity: 0;
+  color: var(--primary);
+}
+.input input:invalid:focus + label,
+.input input:not(:placeholder-shown) + label {
+  font-size: 0.9em;
+  bottom: 2em;
+}
+.input input:focus::placeholder {
+  opacity: 0.6;
+}
+.input input:invalid:focus + label:after,
+.input input:not(:placeholder-shown) + label:after {
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid var(--accent);
+  color: var(--primary);
+  font-size: 1.1em;
+}
