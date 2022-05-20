@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NoJs</title>
     <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body id="toggle">
     <header>
         <div></div>
-        <a href="/" id="logo">Logo</a>
+        <a href="/" id="logo">NoJs</a>
         <div id="menu_toggle"><a href="#toggle" id="open_menu">Menu</a><a href="#" id="close_menu">Menu</a></div>
         <nav id="menu">
             <a href="#intro">Intro</a>
@@ -20,9 +20,17 @@
     </header>
     <div id="wrapper">
         <main>
-            <div id="intro">top</div>
-            <div id="about">about</div>
-            <div id="projects">projects</div>
+            <div class="container" id="intro">
+                <div class="grid">
+                    <div class="col-2">Col</div>
+                    <div class="col-1 md-col-2">Col</div>
+                    <div class="col-3 md-col-2">Col</div>
+                    <div class="col-2">Col</div>
+                    <div class="col-4">Col</div>
+                </div>
+            </div>
+            <div class="container" id="about">about</div>
+            <div class="container" id="projects">projects</div>
         </main>
         <footer>
             (c) Lorem ipsum dolor sit amet.
