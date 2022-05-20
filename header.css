@@ -16,7 +16,10 @@ header {
   height: var(--header-height);
   z-index: 50;
   background-color: transparent;
-  transition: background-color 0.02s 0.18s;
+}
+#a:target {
+    transition: background-color 0.02s 0.18s;
+    background-color: transparent;
 }
 
 header > * {
@@ -167,6 +170,11 @@ header > * {
 @media (min-width: 1024px) AND (hover: hover) {
   :root {
     --menu: var(--header-height) !important;
+  }
+
+  header {
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
   }
 
   header a {
