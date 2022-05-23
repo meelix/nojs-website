@@ -1,0 +1,14 @@
+{
+  "name": "nojs-website",
+  "version": "1.0.0",
+  "repository": "https://github.com/meelix/nojs-website.git",
+  "author": "Matthias Haid <matthias@villa-marianne.com>",
+  "license": "MIT",
+  "dependencies": {
+    "parcel": "^2.5.0"
+  },
+  "scripts": {
+    "watch": "yarn parcel watch main.css",
+    "build": "yarn parcel build main.css"
+  }
+}
