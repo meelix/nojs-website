@@ -9,9 +9,9 @@
     "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "scripts": {
-    "watch": "yarn parcel watch main.css",
-    "build": "yarn parcel build main.css",
-    "production": "yarn parcel build --no-source-maps main.css"
+    "watch": "yarn parcel watch --public-url . main.css",
+    "build": "yarn parcel build --public-url . main.css",
+    "production": "yarn parcel build --public-url . --no-source-maps main.css"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
