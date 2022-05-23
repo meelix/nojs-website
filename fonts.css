@@ -8,6 +8,5 @@
     url("fonts/subset-MonoLisa-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  /* font-display: swap; */
-  font-display: block;
+  font-display: swap;
 }
