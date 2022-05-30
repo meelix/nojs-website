@@ -1,5 +1,5 @@
 import htmlPurge from 'vite-plugin-html-purgecss'
-import htmlImages from './vite-plugin-html-images/dist/index.mjs'
+import htmlImages from './vite-plugin-html-images/dist/index.js'
 import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default {
