@@ -4,15 +4,13 @@
   "repository": "https://github.com/meelix/nojs-website.git",
   "author": "Matthias Haid <matthias@villa-marianne.com>",
   "license": "MIT",
-  "source": "./index.html",
   "scripts": {
-    "watch": "yarn parcel watch --public-url . main.css",
-    "build": "yarn parcel build --public-url . main.css",
-    "production": "yarn parcel build --public-url . --no-source-maps main.css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "parcel": "^2.5.0",
-    "parcel-plugin-nuke-dist": "^1.0.1",
-    "parcel-plugin-purgecss": "^3.0.0"
+    "vite": "^2.9.9",
+    "vite-plugin-html-purgecss": "^0.1.1"
   }
 }
