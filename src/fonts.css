@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: "MonoLisa";
-  src: url("fonts/subset-MonoLisa-Regular.woff2") format("woff2"),
+  src: local(),
+    url("fonts/subset-MonoLisa-Regular.woff2") format("woff2"),
     url("fonts/subset-MonoLisa-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
