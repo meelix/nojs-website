@@ -1,5 +1,5 @@
 import htmlPurge from 'vite-plugin-html-purgecss'
-import htmlImages from './local-dep/vite-plugin-html-images/dist/index.js'
+import htmlImages from 'vite-plugin-html-images'
 import { createHtmlPlugin } from 'vite-plugin-html'
 
 export default {
@@ -16,12 +16,4 @@ export default {
             minify: true,
         }),
     ],
-    optimizeDeps: {
-            include: ['local-dep']
-      },
-      build: {
-        commonjsOptions: {
-             include: [/local-dep/, /node_modules/]
-        }
-    }
 }
