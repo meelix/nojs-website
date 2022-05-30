@@ -157,3 +157,8 @@ main > * {
 .grid > * {
   border: 1px dotted var(--accent);
 }
+
+img {
+  width: 100%;
+  height: auto;
+}

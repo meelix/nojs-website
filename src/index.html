@@ -33,12 +33,23 @@
                     <div class="col-4">Col</div>
                 </div>
             </div>
-            <div class="container mt3" id="about">
+            <div class="container mt3">
                 <picture>
-                    <source srcset="/img/f.jpg" media="(min-width:1024px)">
-                    <source srcset="/img/f.jpg?width=1024" media="(min-width:768px)">
-                    <source srcset="/img/f.jpg?width=768" media="(min-width:480px)">
-                    <img src="/img/f.jpg?width=480" alt="Flowers" style="width:auto;">
+                    <source srcset="/img/f.jpg?format=avif&quality=75" type="image/avif" media="(min-width:1024px)">
+                    <source srcset="/img/f.jpg?format=webp&quality=75" type="image/webp" media="(min-width:1024px)">
+                    <source srcset="/img/f.jpg" type="image/jpeg" media="(min-width:1024px)">
+
+                    <source srcset="/img/f.jpg?width=1024&format=avif&quality=75" type="image/avif" media="(min-width:768px)">
+                    <source srcset="/img/f.jpg?width=1024&format=webp&quality=75" type="image/webp" media="(min-width:768px)">
+                    <source srcset="/img/f.jpg?width=1024" type="image/jpeg" media="(min-width:768px)">
+
+                    <source srcset="/img/f.jpg?width=768&format=avif&quality=75" type="image/avif" media="(min-width:480px)">
+                    <source srcset="/img/f.jpg?width=768&format=webp&quality=75" type="image/webp" media="(min-width:480px)">
+                    <source srcset="/img/f.jpg?width=768" type="image/jpeg" media="(min-width:480px)">
+                    
+                    <source srcset="/img/f.jpg?width=480&format=avif&quality=75" type="image/avif">
+                    <source srcset="/img/f.jpg?width=480&format=webp&quality=75" type="image/webp">
+                    <img src="/img/f.jpg?width=480" alt="test image" decoding="async" width="480" height="320">
                 </picture>
             </div>
             <div class="container mt3" id="about">
