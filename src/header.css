@@ -17,12 +17,13 @@ header {
   z-index: 50;
   background-color: transparent;
 }
+
 #a:target {
   transition: background-color 0.02s 0.18s;
   background-color: transparent;
 }
 
-header > * {
+header>* {
   flex: 1 1 100%;
 }
 
@@ -134,11 +135,11 @@ header > * {
   visibility: hidden;
 }
 
-#menu > *:first-child {
+#menu>*:first-child {
   margin-top: auto;
 }
 
-#menu > *:last-child {
+#menu>*:last-child {
   margin-bottom: auto;
 }
 
@@ -165,6 +166,17 @@ header > * {
   padding-bottom: min(var(--header-height), 15vh);
   visibility: visible;
   transition: height 0.2s, visibility 3s 0s;
+}
+
+.github svg {
+  fill: var(--accent);
+  transition: fill 0.1s;
+}
+
+.github:hover svg,
+.github:focus svg,
+.github:active svg {
+  fill: var(--accent-darker);
 }
 
 @media (min-width: 1024px) AND (hover: hover) {
@@ -209,11 +221,11 @@ header > * {
     transition-delay: 0s !important;
   }
 
-  #menu > *:first-child {
+  #menu>*:first-child {
     margin-top: 0;
   }
 
-  #menu > *:last-child {
+  #menu>*:last-child {
     margin-bottom: 0;
   }
 
@@ -222,7 +234,7 @@ header > * {
     margin: 0;
   }
 
-  #menu a + a {
+  #menu a+a {
     margin-left: 0.5em;
   }
 }

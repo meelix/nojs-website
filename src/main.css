@@ -1,7 +1,8 @@
 @import url("./reset.css");
 @import url("./spacing.css");
 @import url("./layout.css");
-@import url("./fonts.css");
+@import url("./typography.css");
+@import url("./buttons.css");
 @import url("./header.css");
 @import url("./form.css");
 
@@ -43,16 +44,6 @@ body {
   flex-direction: column;
 }
 
-a {
-  color: var(--accent);
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: var(--accent-darker);
-}
-
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 11px;
@@ -68,100 +59,36 @@ a:active {
   background: transparent;
 }
 
-/* elements */
-
-/*buttons*/
-.btn,
-button {
-  padding: 0.25rem 1.125rem;
-  color: var(--btn-color);
-  border: 1px solid var(--btn-border);
-  background-color: var(--btn-bg);
-  transition: color 0.1s, border 0.1s, background-color 0.1s;
-}
-.btn:hover,
-.btn:focus,
-.btn:active,
-button:hover,
-button:focus,
-button:active {
-  color: var(--btn-color_hover);
-  background-color: var(--btn-bg_hover);
-  border-color: var(--btn-border_hover);
-}
-.btn:active,
-button:active {
-  box-shadow: 0 0 1px 1px var(--btn-border_hover);
-}
-.btn-primary {
-  --btn-color: var(--primary);
-  --btn-bg: transparent;
-  --btn-bg_hover: var(--primary);
-  --btn-border: var(--primary);
-  --btn-border_hover: var(--primary);
-}
-.btn-accent {
-  --btn-color: var(--accent);
-  --btn-color_hover: var(--dark);
-  --btn-bg: transparent;
-  --btn-bg_hover: var(--accent);
-  --btn-border: var(--accent);
-  --btn-border_hover: var(--accent);
-}
-
-/* dunno yet */
-a:hover small {
-  opacity: 0.8;
-}
-small {
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity 0.1s;
-}
-h2 > span {
-  display: inline-block;
-  width: 0em;
-}
-.center {
-  text-align: center;
-}
-#unsubscribe {
-  color: var(--primary);
-}
-
-footer {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.github svg {
-  fill: var(--accent);
-  transition: fill 0.1s;
-}
-.github:hover svg,
-.github:focus svg,
-.github:active svg {
-  fill: var(--accent-darker);
-}
-
-/* -- temp -- */
+/* random stuff */
 main {
   margin-top: auto;
   margin-bottom: auto;
 }
-/* 
-main > * {
-  height: 100vh;
-} */
 
-.grid > * {
-  border: 1px dotted var(--accent);
+a:hover small {
+  opacity: 0.8;
+}
+
+#unsubscribe {
+  color: var(--primary);
 }
 
 img {
   width: 100%;
   height: auto;
 }
+
+
+footer {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.grid>* {
+  border: 1px dotted var(--accent);
+}
+
+/* elements */
 
 /*swiper*/
 .carousel {
@@ -175,13 +102,16 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+
 .carousel .item {
-   scroll-snap-align: start;
-   scroll-snap-type: x;
-   scroll-snap-stop: always;
-   touch-action: pan-x;
+  scroll-snap-align: start;
+  scroll-snap-type: x;
+  scroll-snap-stop: always;
+  touch-action: pan-x;
 }
-.carousel img, .carousel picture {
+
+.carousel img,
+.carousel picture {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -197,9 +127,11 @@ img {
   transition: grid-template-rows .3s;
   overflow: hidden;
 }
-.acc details[open] + .content-wrapper {
+
+.acc details[open]+.content-wrapper {
   grid-template-rows: 1fr;
 }
+
 .acc .content {
   min-height: 0;
 }
@@ -208,23 +140,23 @@ img {
 #wrapper {
   perspective: 2px;
 }
-#wrapper > * {
+
+#wrapper>* {
   transform-style: preserve-3d;
 }
+
 .parallax {
   transform-style: preserve-3d;
-
   position: relative;
-  /* height: 100vh; */
-  /* height: 50vh; */
+  height: calc(100vh - var(--header-height));
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   max-width: 100%;
-  /* overflow: hidden; */
   color: white;
 }
+
 .parallax::after {
   content: " ";
   position: absolute;

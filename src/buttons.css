@@ -1,0 +1,56 @@
+a {
+    color: var(--accent);
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--accent-darker);
+}
+
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn,
+button {
+    padding: 0.25rem 1.125rem;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-border);
+    background-color: var(--btn-bg);
+    transition: color 0.1s, border 0.1s, background-color 0.1s;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+button:hover,
+button:focus,
+button:active {
+    color: var(--btn-color_hover);
+    background-color: var(--btn-bg_hover);
+    border-color: var(--btn-border_hover);
+}
+
+.btn:active,
+button:active {
+    box-shadow: 0 0 1px 1px var(--btn-border_hover);
+}
+
+.btn-primary {
+    --btn-color: var(--primary);
+    --btn-bg: transparent;
+    --btn-bg_hover: var(--primary);
+    --btn-border: var(--primary);
+    --btn-border_hover: var(--primary);
+}
+
+.btn-accent {
+    --btn-color: var(--accent);
+    --btn-color_hover: var(--dark);
+    --btn-bg: transparent;
+    --btn-bg_hover: var(--accent);
+    --btn-border: var(--accent);
+    --btn-border_hover: var(--accent);
+}

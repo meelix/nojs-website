@@ -52,100 +52,79 @@
             </div>
             <div class="parallax bg">
                 <div class="container py4">
-                    <h2>Fun fact:</h2>
-                    <p>The sound that occurs when you snap your fingers is made by your middle finger hitting your palm!</p>
+                    <h2>A fu*king parallax in pure css!!</h2>
+                    <p>Although it pretty much only works with 100vh and the neighbours need a background to cover the overflow</p>
                 </div>
             </div>
-            <div class="container pt3 pb2 neighbouring-parallax">
-                <h2 class="mb1">accordion</h2>
-                <div class="acc mb1">
-                    <details>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Heck yeah! Autoheight, animated, crawlable and even fully accessible >:3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="acc">
-                    <details open>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Even the inital state is easily set</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt3 pb2">
-                <h2 class="mb1">accordion</h2>
-                <div class="acc mb1">
-                    <details>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Heck yeah! Autoheight, animated, crawlable and even fully accessible >:3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="acc">
-                    <details open>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Even the inital state is easily set</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt3 pb2">
-                <h2 class="mb1">accordion</h2>
-                <div class="acc mb1">
-                    <details>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Heck yeah! Autoheight, animated, crawlable and even fully accessible >:3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="acc">
-                    <details open>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Even the inital state is easily set</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt3 pb2">
-                <h2 class="mb1">accordion</h2>
-                <div class="acc mb1">
-                    <details>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Heck yeah! Autoheight, animated, crawlable and even fully accessible >:3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="acc">
-                    <details open>
-                        <summary>Title</summary>
-                    </details>
-                    <div class="content-wrapper">
-                        <div class="content">
-                            <p>Even the inital state is easily set</p>
-                        </div>
-                    </div>
+            <div class="container pt3 neighbouring-parallax">
+                <h2>Css only swiper</h2>
+                <h3>..not user friendly on desktop</h3>
+                <p class="my1">It's too snapy on mobile, if you slide slow it won't snap. To use it on desktop you'd have to hold shift and scroll or have a mouse that can scroll horizontaly.</p>
+                <small>(<a href="https://www.smashingmagazine.com/2015/02/carousel-usage-exploration-on-mobile-e-commerce-websites/" target="_blank">carousel controversy</a>)</small>
+                <div class="carousel mt2">
+                    <picture class="item">
+                        <source srcset="/img/f.jpg?format=avif&quality=75" type="image/avif" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?format=webp&quality=75" type="image/webp" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?quality=75" type="image/jpeg" media="(min-width:1600px)">
+    
+                        <source srcset="/img/f.jpg?width=1600&format=avif&quality=75" type="image/avif" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&format=webp&quality=75" type="image/webp" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&quality=75" type="image/jpeg" media="(min-width:1204px)">
+    
+                        <source srcset="/img/f.jpg?width=1024&format=avif&quality=75" type="image/avif" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&format=webp&quality=75" type="image/webp" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&quality=75" type="image/jpeg" media="(min-width:768px)">
+    
+                        <source srcset="/img/f.jpg?width=768&format=avif&quality=75" type="image/avif" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&format=webp&quality=75" type="image/webp" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&quality=75" type="image/jpeg" media="(min-width:480px)">
+                        
+                        <source srcset="/img/f.jpg?width=480&format=avif&quality=75" type="image/avif">
+                        <source srcset="/img/f.jpg?width=480&format=webp&quality=75" type="image/webp">
+                        <img src="/img/f.jpg?width=480&quality=75" alt="test image" draggable="false" decoding="async" width="480" height="320">
+                    </picture>
+                    <picture class="item">
+                        <source srcset="/img/f.jpg?format=avif&quality=75" type="image/avif" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?format=webp&quality=75" type="image/webp" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?quality=75" type="image/jpeg" media="(min-width:1600px)">
+    
+                        <source srcset="/img/f.jpg?width=1600&format=avif&quality=75" type="image/avif" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&format=webp&quality=75" type="image/webp" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&quality=75" type="image/jpeg" media="(min-width:1204px)">
+    
+                        <source srcset="/img/f.jpg?width=1024&format=avif&quality=75" type="image/avif" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&format=webp&quality=75" type="image/webp" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&quality=75" type="image/jpeg" media="(min-width:768px)">
+    
+                        <source srcset="/img/f.jpg?width=768&format=avif&quality=75" type="image/avif" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&format=webp&quality=75" type="image/webp" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&quality=75" type="image/jpeg" media="(min-width:480px)">
+                        
+                        <source srcset="/img/f.jpg?width=480&format=avif&quality=75" type="image/avif">
+                        <source srcset="/img/f.jpg?width=480&format=webp&quality=75" type="image/webp">
+                        <img src="/img/f.jpg?width=480&quality=75" alt="test image" loading="lazy" draggable="false" decoding="async" width="480" height="320">
+                    </picture>
+                    <picture class="item">
+                        <source srcset="/img/f.jpg?format=avif&quality=75" type="image/avif" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?format=webp&quality=75" type="image/webp" media="(min-width:1600px)">
+                        <source srcset="/img/f.jpg?quality=75" type="image/jpeg" media="(min-width:1600px)">
+    
+                        <source srcset="/img/f.jpg?width=1600&format=avif&quality=75" type="image/avif" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&format=webp&quality=75" type="image/webp" media="(min-width:1024px)">
+                        <source srcset="/img/f.jpg?width=1600&quality=75" type="image/jpeg" media="(min-width:1204px)">
+    
+                        <source srcset="/img/f.jpg?width=1024&format=avif&quality=75" type="image/avif" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&format=webp&quality=75" type="image/webp" media="(min-width:768px)">
+                        <source srcset="/img/f.jpg?width=1024&quality=75" type="image/jpeg" media="(min-width:768px)">
+    
+                        <source srcset="/img/f.jpg?width=768&format=avif&quality=75" type="image/avif" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&format=webp&quality=75" type="image/webp" media="(min-width:480px)">
+                        <source srcset="/img/f.jpg?width=768&quality=75" type="image/jpeg" media="(min-width:480px)">
+                        
+                        <source srcset="/img/f.jpg?width=480&format=avif&quality=75" type="image/avif">
+                        <source srcset="/img/f.jpg?width=480&format=webp&quality=75" type="image/webp">
+                        <img src="/img/f.jpg?width=480&quality=75" alt="test image" loading="lazy" draggable="false" decoding="async" width="480" height="320">
+                    </picture>
                 </div>
             </div>
         </main>

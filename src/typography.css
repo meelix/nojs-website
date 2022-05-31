@@ -1,0 +1,59 @@
+:root {
+  --font-1: "MonoLisa", sans-serif;
+}
+
+@font-face {
+  font-family: "MonoLisa";
+  src: local(),
+    url("fonts/subset-MonoLisa-Regular.woff2") format("woff2"),
+    url("fonts/subset-MonoLisa-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+small {
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity 0.1s;
+}
+
+h2>span {
+  display: inline-block;
+  width: 0em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: .5em;
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: .25em;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: .25em;
+  }
+}
