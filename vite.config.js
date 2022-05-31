@@ -7,7 +7,7 @@ export default {
     root: "src",
     plugins: [
         htmlPurge({
-            content: ["src/**/*.html", "src/**/*.js"]
+            content: ["**/*.html", "**/*.js"]
         }),
         htmlImages({
             tempDirname: '.tempimages',
